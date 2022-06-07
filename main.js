@@ -90,7 +90,7 @@ const logger = pino({
 }).child({ class: 'baileys'})
 
 const connectionOptions = {
-  version: [2, 2208, 14],
+  version: [2, 2218, 8],
   printQRInTerminal: true,
   auth: state,
   // logger: pino({ prettyPrint: { levelFirst: true, ignore: 'hostname', translateTime: true },  prettifier: require('pino-pretty') }),
@@ -131,7 +131,7 @@ async function connectionUpdate(update) {
   }
   if (global.db.data == null) await loadDatabase()
   console.log(JSON.stringify(update, null, 4))
-  if (update.receivedPendingNotifications) conn.sendMessage(`62895330379186@s.whatsapp.net`, {text: 'Successfully connected by Aine' }) //made by Muhammad Ridwan Reynaldy 
+  if (update.receivedPendingNotifications) conn.sendMessage(`6281649357107@s.whatsapp.net`, {text: 'Successfully connected by Aine' }) //made by Muhammad Ridwan Reynaldy 
 }
 
 
