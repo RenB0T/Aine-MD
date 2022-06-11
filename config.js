@@ -41,7 +41,7 @@ const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
   var sticker_name = '@ainee_bot'
-  var sticker_author = 'A-Desty'
+  var sticker_author = 'Aii_Bot'
 } else {
   var sticker_name = stickerpack.spackname
   var sticker_author = stickerpack.sauthor
@@ -58,7 +58,7 @@ fs.watchFile(file_exif, () => {
 // Sticker WM
 global.packname = sticker_name
 global.author = sticker_author
-global.wm = '© A-Desty'
+global.wm = '© Aii_Bot'
 
 global.multiplier = 1000 // The higher, The harder levelup
 
